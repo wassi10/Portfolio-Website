@@ -476,3 +476,79 @@ body{
   .skills-content .progress h3{
    font-size: 1.7rem;
   }
+
+  /* Project Section */
+
+  .project h4{
+   text-align: center;
+   color: var(--text-color);
+   font-size: 1.8rem;
+  }
+
+  .project-img{
+   width: 290px;
+   height: 180px;
+   border-radius: .75rem;
+   margin-bottom: 1.5rem;
+  }
+
+  .projects-content{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+   margin-top: 5rem;
+  }
+
+  .row{
+   padding: 20px;
+   background: var(--second-bg-color);
+   border-radius: 0.5rem;
+   transition: all .40s ease;
+  }
+  
+  .main-row{
+   display: flex;
+  }
+  /* .projects-container{
+   overflow: initial;
+  }
+
+  .project-content{
+   display: grid;
+   justify-content: center;
+  }
+
+  .project-img{
+   width: 270px;
+   height: 200px;
+   border-radius: .75rem;
+   margin-bottom: 1.25rem;
+  }
+  .project-subtitle{
+   font-size: 1.5rem;
+   color: var(--main-color);
+  }
+
+  .projects-title{
+   font-size: 1.8rem;
+   margin-bottom: 1.25rem;
+   margin: .5rem 0 1.25rem;
+  }
+
+  .project-button{
+   display: inline-flex;
+   align-items: center;
+   column-gap: .5rem;
+   color: var(--text-color);
+   font-size: 1.3rem;
+  }
+  .project-button i{
+   font-size: 1.3rem;
+   transition: transform .3s;
+  }
+  .project-button:hover i{
+   transform: translate(.25rem);
+  }
+   */
