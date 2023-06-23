@@ -10,7 +10,7 @@
    }
    .skills-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     align-items: center;
     text-align: center;
     gap: 2rem;
