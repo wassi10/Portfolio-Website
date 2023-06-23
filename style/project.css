@@ -1,0 +1,57 @@
+/* =========Project Section======== */
+
+.project h4{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.8rem;
+   }
+ 
+   .project-img{
+    width: 295px;
+    height: 170px;
+    border-radius: .75rem;
+    margin-bottom: 1.5rem;
+   }
+ 
+   .projects-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(315px, auto));
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+   }
+ 
+   .row{
+    padding: 15px;
+    background: var(--second-bg-color);
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+   }
+   
+   .main-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+   }
+ 
+   .row h5{
+    font-size: 13px;
+    letter-spacing: 1px;
+   }
+   .row h3{
+    color: var(--main-color);
+    font-size: 20px;
+    
+   }
+   .row-icon i{
+    font-size: 14px;
+   }
+  .row:hover{
+    transform: scale(1.03) translateY(-5px);
+    border: .2rem solid var(--main-color);
+    cursor: pointer;
+   }
+ 
