@@ -7,6 +7,7 @@
  }
  .home-content{
     max-width: 60rem;
+    z-index: 99;
  }
  .home-content h1{
     font-size: 5.3rem;
