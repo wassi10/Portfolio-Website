@@ -117,10 +117,22 @@
    }
    .footer p{
       margin-top: 2rem;
+      text-align: center;
    }
   }
 
-  @media (max-width: 370px){
-   
+  @media (max-width: 371px){
+   .home {
+      justify-content: center;
+   }
+   .home-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+   }
+   .home-content h1 {
+      font-size: 5rem;
+   }
   }
 
