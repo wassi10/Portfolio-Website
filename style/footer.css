@@ -1,17 +1,18 @@
 /* =========Footer======== */
-.footer{
+    .footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
    }
- 
+
    .footer-text p{
     font-size: 1.6rem;
     color: var(--main-color);
     font-weight: 500;
    }
+
    .footer-iconTop a{
     position: relative;
     display: inline-flex;
@@ -24,6 +25,7 @@
     z-index: 1;
     overflow: hidden;
    }
+
    .footer-iconTop a::before{
     content: '';
     position: absolute;
@@ -35,6 +37,7 @@
     z-index: -1;
     transition: .5s;
    }
+   
    .footer-iconTop a:hover::before{
     width: 100%;
    }

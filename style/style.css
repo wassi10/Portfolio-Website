@@ -83,16 +83,26 @@ body{
  }
 
  /* ====Animation reload and scroll */
-
+/* 
  .animate {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--main-color);
+    background: var(--bg-color);
     z-index: 98;
  }
+
+ .education .education-box .animate.scroll{
+    width: 100%;
+ }
+
+ .skills .skills-content .animate.scroll{
+    width: 100%;
+ }
+
+
 
  .logo .animate,
  .navbar .animate,
@@ -103,12 +113,8 @@ body{
  }
 
  @keyframes showRight{
-   100% {
-       width: 0;
+    100%{
+        width: 0;
     }
-  }
-  
-
-
-
-  
+ }
+  */
