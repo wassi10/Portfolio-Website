@@ -48,7 +48,7 @@
                 <h3>Frontend Developer</h3>
             </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ex iure non nihil omnis ipsa porro adipisci facilis! Pariatur dolores fugit optio, ipsam velit nemo a laborum!</p>
+            <p>I am a Computer Science student passionate about implementing new project. Excellent Communication, teamwork and interpersonal skills, and possess a wide range of technical skills!</p>
 
             <div class="btn-box">
                 <a href="#" class="btn">Hire Me</a>
@@ -76,7 +76,7 @@
 
         <div class="about-content">
             <h3>Flutter Developer!<span class="animate scroll" style="--i:3;"></span></h3>
-            <p>My name is Khadiza Akther. I am a Computer Science student passionate about implementing new project. Excellent Communication, teamwork and interpersonal skills, and possess a wide range of technical skills.  Looking to start and build a career as a Software Engineer in reputed company where I can give my best and get the best.</p>
+            <p>My name is Khadiza Akther. I am a Computer Science student passionate about implementing new project. Excellent Communication, teamwork and interpersonal skills, and possess a wide range of technical skills. Looking to start and build a career as a Software Engineer in reputed company where I can give my best and get the best.</p>
 
             <div class="btn-box btns">
                 <a href="#" class="btn">Read More</a>
@@ -99,25 +99,25 @@
                                 <i class='bx bxs-calendar'></i> 2020 - 2023
                             </div>
                             <h3>B.Sc in Computer Science - Leading University </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officia amet non nesciunt voluptatibus perferendis tenetur porro accusamus eligendi? Nulla.</p>
+                            <p>Now I am going to graduate from this university. I have been studying here for 3 years.</p>
                         </div>
                     </div>
                     <div class="education-content">
                         <div class="content">
                             <div class="year">
-                                <i class='bx bxs-calendar'></i> 2020 - 2023
+                                <i class='bx bxs-calendar'></i> 2017 - 2019
                             </div>
-                            <h3>B.Sc in Computer Science - Leading University </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officia amet non nesciunt voluptatibus perferendis tenetur porro accusamus eligendi? Nulla.</p>
+                            <h3>Higher Secondary - Sylhet  Govt  Women's  College</h3>
+                            <p>This was my dream college where I completed my secondary level.</p>
                         </div>
                     </div>
                     <div class="education-content">
                         <div class="content">
                             <div class="year">
-                                <i class='bx bxs-calendar'></i> 2020 - 2023
+                                <i class='bx bxs-calendar'></i> 2013 - 2017
                             </div>
-                            <h3>B.Sc in Computer Science - Leading University </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officia amet non nesciunt voluptatibus perferendis tenetur porro accusamus eligendi? Nulla.</p>
+                            <h3>Secondary - Gobindogonj M.L. High School </h3>
+                            <p>I studied here for 4 years, from class seven to S.S.C. where I found many helpful teachers and classmates. Many of my memories are attached to this school.</p>
                         </div>
                     </div>
                 </div>
@@ -297,39 +297,61 @@
     <section class="contact" id = "contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form name = "submit-to-google-sheet">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name"  required>
+                    <input type="text" name = "name" placeholder="Full Name"  required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address"  required>
+                    <input type="text" name = "email" placeholder="Email Address"  required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number"  required>
+                    <input type="number" name = "mobile" placeholder="Mobile Number"  required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject"  required>
+                    <input type="text" name = "email-subject" placeholder="Email Subject"  required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
             </div>
 
+            <span id="success"></span><br>
+
             <div class="btn-box btns">
                 <button type="submit" class="btn">Submit</button>
-
             </div>
+
         </form>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwddro6d5tdf-8yVRPPHe7i3o-aUrxZnHOIUPcFdaU4MjUZdRtYXYjpnuOXD8Q33aaJiw/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            const success = document.getElementById('success');
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    success.innerHTML = "Successfully Submitted";
+
+                    setTimeout(function(){
+                        success.innerHTML = "";
+                    }, 3000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 
     </section>
 
@@ -345,7 +367,11 @@
         
     </footer>
 
+    <!-- ===Animation=== -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ===Javascript added=== -->
     <script src="js/script.js"></script>
+
 </body>
 </html>
