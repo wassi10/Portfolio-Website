@@ -45,6 +45,17 @@ window.onscroll = () => {
 
     // Animation Footer on Scroll
 
-    let footer = document.querySelector('footer');
-    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
+    // let footer = document.querySelector('footer');
+    // footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
+
+//animation
+
+const sr = ScrollReveal ({
+    distance: '20px',
+    duration: 3000,
+    reset: true
+});
+sr.reveal('.header',{delay: 190, origin: 'left'});
+sr.reveal('.home, .heading',{delay: 200, origin: 'top'});
+sr.reveal('.about-img, .about-content, .education-row, .skills-content, .projects-content, form, .footer',{delay: 200, origin: 'bottom'});
