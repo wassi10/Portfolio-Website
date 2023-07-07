@@ -39,7 +39,7 @@
    }
  
    .row h5{
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 1px;
    }
    .row h3{
@@ -48,7 +48,7 @@
     
    }
    .row-icon a {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--text-color);
     
    }
